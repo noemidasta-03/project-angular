@@ -1,0 +1,12 @@
+<form #loginForm='ngForm' (ngSubmit)="onsubmit(loginForm)" class="flex-container">
+  <h1>LOGIN</h1>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput type="email" name="email" required ngModel>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Password</mat-label>
+    <input matInput  type="password" name="password" required ngModel>
+  </mat-form-field>
+  <button mat-raised-button type="submit" [disabled]="!loginForm.valid" >Invia</button>
+</form>

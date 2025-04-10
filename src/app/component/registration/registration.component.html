@@ -1,0 +1,26 @@
+<form #registrationForm='ngForm' (ngSubmit)="onsubmit(registrationForm)" class="flex-container" >
+  <h1>REGISTRATION</h1>
+  <mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input matInput type="nome" name="nome" required ngModel>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Cognome</mat-label>
+    <input matInput type="cognome" name="cognome" required ngModel>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput type="email" name="email" required ngModel>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Password</mat-label>
+    <input matInput  type="password" name="password" required ngModel>
+  </mat-form-field>
+  <button mat-raised-button type="submit" [disabled]="!registrationForm.valid" >Invia</button>
+</form>
+
+
+
+
+
+
