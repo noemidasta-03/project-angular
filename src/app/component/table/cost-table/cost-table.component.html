@@ -1,0 +1,20 @@
+<h2 style="display: flex; justify-content: center">COSTI</h2>
+<router-outlet></router-outlet>
+<table class="table-employees">
+  <thead>
+  <tr>
+    <th>Nome</th>
+    <th *ngFor="let month of getMonths()">{{month}}</th>
+    <th>Costo Totale(€)</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employees">
+      <td>{{emp.nome}}</td>
+      <td *ngFor="let cost of getEmployeeCost(emp)">{{cost | number: '1.0-2' }}</td>
+      <td>{{getEmployeeTotalCost(emp) | number:'1.0-2'}}</td>
+    </tr>
+
+  </tbody>
+</table>
+

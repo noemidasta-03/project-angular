@@ -1,8 +1,8 @@
 import {
-  ActivatedRouteSnapshot,
+
   CanActivateChild,
   Router,
-  RouterStateSnapshot,
+
 } from '@angular/router';
 import {AuthService} from './auth.service';
 import {Injectable} from '@angular/core';
@@ -17,7 +17,7 @@ import {Injectable} from '@angular/core';
 export class AuthGuard implements CanActivateChild {
   constructor(private authService: AuthService, private router: Router) { }
 
-  canActivateChild(childRoute:ActivatedRouteSnapshot, state:RouterStateSnapshot) {
+  canActivateChild() {
     if(this.authService.isLoggedIn){
       return true;
     } else{

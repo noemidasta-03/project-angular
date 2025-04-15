@@ -1,0 +1,22 @@
+
+
+<router-outlet></router-outlet>
+<h2 style="display: flex;justify-content: center">ORARI</h2>
+<button *ngIf="inputClick" mat-button (click)="onsave()">Salva</button>
+<table class="table-employees">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th *ngFor="let month of months">{{month}}</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let emp of editedEmployees " >
+      <td>{{emp.nome}}</td>
+      <td   *ngFor="let month of months" >
+        <input (click)="onInputClick()" type="number" style="width: 40px; border:unset;" [(ngModel)]="emp.ore[months.indexOf(month)]">
+      </td>
+    </tr>
+  </tbody>
+</table>
+

@@ -4,6 +4,8 @@ import {MatFormField, MatInput, MatLabel} from "@angular/material/input";
 import {MatButton} from '@angular/material/button';
 
 
+
+
 @Component({
   selector: 'app-registration',
   imports: [
@@ -14,24 +16,31 @@ import {MatButton} from '@angular/material/button';
     MatLabel,
     MatFormField,
 
+
   ],
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css'
 })
 export class RegistrationComponent implements OnInit {
+  constructor() {
+  }
   ngOnInit() {}
 
   onsubmit(form: NgForm) {
-    if(form.valid){
-      const name = form.controls['nome'].value;
-      const surname = form.controls['cognome'].value;
-      const email = form.value.email;
-      const password = form.value.password;
-
-      console.log('form valid',form.value)
-    }else{
-      console.log('form invalid');
+    if (form.invalid) {
+      console.log('Form non valido');
+      return;
     }
+
+    const formData = form.value;
+    const user = {
+      nome: formData.nome,
+      cognome: formData.cognome,
+      email: formData.email,
+      password: formData.password,
+    };
+
 
   }
 }
+

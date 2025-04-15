@@ -8,9 +8,9 @@
     <mat-icon>face</mat-icon>
   </button>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>home</mat-icon>
+    <mat-icon [routerLink]="['/pagina1']" >home</mat-icon>
   </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" >
     <mat-icon>logout</mat-icon>
   </button>
 </mat-toolbar>
@@ -18,7 +18,7 @@
   <mat-drawer #drawer  mode="side" [opened]="drawerOpened">
     <mat-list role="list" class="list-item" >
       <mat-list-item role="pagina1" routerLink="pagina1" [routerLinkActive]="'activate'">pagina1</mat-list-item>
-      <mat-list-item role="pagina2" routerLink="pagina2" [routerLinkActive]="'activate'">pagina2</mat-list-item>
+      <mat-list-item role="table" routerLink="table" [routerLinkActive]="'activate'">table</mat-list-item>
       <mat-list-item role="pagina3" routerLink="pagina3" [routerLinkActive]="'activate'">pagina3</mat-list-item>
     </mat-list>
   </mat-drawer>
