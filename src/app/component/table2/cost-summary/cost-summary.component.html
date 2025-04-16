@@ -1,0 +1,16 @@
+<h2 style="display: flex; justify-content: center">COSTI</h2>
+
+<table class="table-cost-overtime">
+  <thead>
+    <th>Nome</th>
+    <th *ngFor="let month of getMonths()">{{month}}</th>
+    <th>Costo totale(€)</th>
+  </thead>
+  <tbody>
+   <tr *ngFor="let emp of employOvertime ">
+     <td>{{emp.nome}}</td>
+     <td *ngFor="let cost of getCostMonth(emp)">{{cost | number:'1.0-2'}}</td>
+     <td>{{ getTotalCostMonth(emp) | number:'1.0-2'}}</td>
+   </tr>
+  </tbody>
+</table>

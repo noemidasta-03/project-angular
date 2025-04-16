@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nome": "Elisa Martini",
+    "costoOrarioStraordinario": 30,
+    "oreStraordinarie": [12, 8, 10, 9, 14, 15, 11, 10, 13, 12, 9, 10]
+  },
+  {
+    "id": 2,
+    "nome": "Giorgio Neri",
+    "costoOrarioStraordinario": 32,
+    "oreStraordinarie": [10, 7, 8, 9, 12, 13, 10, 11, 12, 10, 8, 9]
+  },
+  {
+    "id": 3,
+    "nome": "Valentina Azzurra",
+    "costoOrarioStraordinario": 35,
+    "oreStraordinarie": [15, 10, 11, 13, 16, 17, 14, 13, 15, 14, 11, 12]
+  },
+  {
+    "id": 4,
+    "nome": "Simone Verde",
+    "costoOrarioStraordinario": 28,
+    "oreStraordinarie": [8, 6, 7, 8, 10, 11, 9, 8, 10, 9, 7, 6]
+  },
+  {
+    "id": 5,
+    "nome": "Chiara Viola",
+    "costoOrarioStraordinario": 34,
+    "oreStraordinarie": [14, 11, 12, 13, 15, 16, 13, 14, 16, 15, 12, 13]
+  },
+  {
+    "id": 6,
+    "nome": "Andrea Fumo",
+    "costoOrarioStraordinario": 27,
+    "oreStraordinarie": [9, 7, 8, 7, 9, 10, 8, 9, 10, 9, 7, 8]
+  },
+  {
+    "id": 7,
+    "nome": "Giulia Lilla",
+    "costoOrarioStraordinario": 31,
+    "oreStraordinarie": [11, 8, 9, 10, 13, 14, 11, 10, 13, 12, 9, 10]
+  },
+  {
+    "id": 8,
+    "nome": "Marco Nero",
+    "costoOrarioStraordinario": 26,
+    "oreStraordinarie": [10, 6, 8, 9, 11, 12, 9, 8, 11, 10, 7, 6]
+  },
+  {
+    "id": 9,
+    "nome": "Sofia Oro",
+    "costoOrarioStraordinario": 38,
+    "oreStraordinarie": [16, 13, 14, 15, 18, 19, 16, 15, 18, 17, 14, 15]
+  },
+  {
+    "id": 10,
+    "nome": "Lorenzo Blu",
+    "costoOrarioStraordinario": 33,
+    "oreStraordinarie": [13, 9, 11, 12, 14, 15, 12, 13, 15, 14, 10, 11]
+  }
+]

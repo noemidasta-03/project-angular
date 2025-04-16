@@ -1,0 +1,16 @@
+<h2 style="display: flex; justify-content: center">STRAORDINARI</h2>
+<button *ngIf="inputClick" mat-button (click)="onsave()">Salva</button>
+<table class="table-employees-overtime">
+  <thead>
+    <th>Nome</th>
+    <th *ngFor="let month of months">{{month}}</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of editedOvertimeEmployees">
+      <td>{{ emp.nome }}</td>
+      <td   *ngFor="let month of months" >
+        <input (click)="onInputClick()" type="number" style="width: 40px; border:unset;" [(ngModel)]="emp.oreStraordinarie[months.indexOf(month)]">
+      </td>
+    </tr>
+  </tbody>
+</table>

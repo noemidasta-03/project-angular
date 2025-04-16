@@ -1,5 +1,4 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
 import {NgForOf, NgIf} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {MatButton} from '@angular/material/button';
@@ -8,7 +7,6 @@ import {EmployeeService} from '../../../service/employee.service';
 @Component({
   selector: 'app-employee-table',
   imports: [
-    RouterOutlet,
     NgForOf,
     FormsModule,
     MatButton,
@@ -39,7 +37,4 @@ export class EmployeeTableComponent implements OnInit {
   onInputClick(){
     this.inputClick=true;
   }
-
-
-
 }

@@ -1,5 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
 import {EmployeeService} from '../../../service/employee.service';
 import {DecimalPipe, NgForOf} from '@angular/common';
 import  employees from './../../../../assets/employees.json';
@@ -8,7 +7,6 @@ import  employees from './../../../../assets/employees.json';
 @Component({
   selector: 'app-cost-table',
   imports: [
-    RouterOutlet,
     NgForOf,
     DecimalPipe
 
@@ -21,10 +19,9 @@ export class CostTableComponent implements OnInit {
   @Input()employees:any=[]
 
   constructor(private employeesService:EmployeeService) { }
-  ngOnInit() {
 
+  ngOnInit() {}
 
-  }
   getMonths(){
     return this.employeesService.getMonths();
   }

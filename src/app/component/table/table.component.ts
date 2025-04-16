@@ -15,6 +15,7 @@ import employees from './../../../assets/employees.json'
   styleUrl: './table.component.css'
 })
 export class TableComponent implements OnInit {
+
   data:any=[];
   editedData:any=[];
   constructor(private http: HttpClient,private employeeService: EmployeeService) { }
@@ -23,7 +24,6 @@ export class TableComponent implements OnInit {
   salva(edited:any){
     this.employeeService.updateData(edited);
     this.data= edited;
-
   }
 
   ngOnInit() {
